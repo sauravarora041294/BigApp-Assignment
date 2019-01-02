@@ -1,0 +1,10 @@
+<div class="table-container">
+  <input class="search-input"
+         [(ngModel)]="searchText"
+         (keyup)="search($event.target.value)"
+         placeholder="Search By Name, Node ID">
+
+   <app-table [tableData]="table_data"
+              [searchText]="searchText">
+   </app-table>
+</div>

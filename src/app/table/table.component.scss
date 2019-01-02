@@ -1,0 +1,39 @@
+$font-color-table: gray;
+$font-size-table: 18px;
+$font-color-head: black;
+$font-size-head: 20px;
+
+.table-body{
+  width: 100%;
+  color: $font-color-head;
+  margin-top: 45px;
+  font-size: $font-size-head;
+}
+.head-text{
+  font-size: 25px;
+  font-weight: 700;;
+}
+table.table-view{
+  table-layout: fixed;
+  width: 100%;
+  padding: 20px;
+  background-color:#f9f9f9;
+  border-style: solid;
+  border-color: gray;
+  border-width: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.text_column{
+  color: $font-color-table;
+  font-size: $font-size-table;
+  cursor: pointer;
+}
+.sort-icon{
+  height: 10px;
+  width: 10px;
+}
+.pagination{
+  margin: 0 0 0 35%;
+}

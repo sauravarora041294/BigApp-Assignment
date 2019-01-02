@@ -1,0 +1,30 @@
+<div class="table-body">
+  <span class="head-text">{{ table_heading }} </span>
+  <table class="table-view">
+    <thead>
+    <tr>
+      <th class="text_column"
+          *ngFor="let column of config"
+          (click)="order(column)">
+        {{ column['value'] }}
+        <svg *ngIf="column['sort']" width="12" height="12" viewBox="0 0 24 24">
+          <path d="M12 0l8 10h-16l8-10zm8 14h-16l8 10 8-10z"/>
+        </svg>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngIf="tableData">
+      <div *ngFor="let row_data of tableData | paginate: { id: 'listing_pagination',
+                                                      itemsPerPage: 10,
+                                                      currentPage: page,
+                                                      totalItems: totalRec } | search : searchText">
+        <app-row [row]="row_data"></app-row>
+      </div>
+    </tr>
+    </tbody>
+  </table>
+  <div class="pagination">
+    <pagination-controls  id="listing_pagination" maxSize="5" directionLinks="true" (pageChange)="page = $event"></pagination-controls>
+  </div>
+</div>
