@@ -1,4 +1,4 @@
-<div class="table-container">
+<div class="table-container" *ngIf="table_data">
   <input class="search-input"
          [(ngModel)]="searchText"
          (keyup)="search($event.target.value)"
