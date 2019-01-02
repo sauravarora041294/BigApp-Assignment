@@ -1,5 +1,12 @@
 .table-container{
   width: 100%;
+  background-color:#f9f9f9;
+  border-style: solid;
+  border-color: gray;
+  border-width: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 .search-input{
   float: right;
@@ -8,7 +15,28 @@
   border-style: solid;
   border-color: darkgray;
   padding: 0 0 0 15px;
-  margin: 0 10px 10px 0px;
+  margin: 10px 10px 10px 0px;
   font-size: 20px;
   color: #a9a9a9;
+}
+canvas#canvas-ref{
+  position: relative !important;
+  height: 250px !important;
+  width: 100% !important;
+}
+canvas#canvas-ref-bar{
+  height: 300px !important;
+  width: 300px !important;
+}
+canvas#canvas-ref-semi{
+  height: 250px !important;
+  width: 100% !important;
+}
+
+.graph-canvas{
+  display: inline-block;
+  display: -moz-inline-block;
+  width: 30%;
+  height: 300px;
+  margin: 0.5%;
 }

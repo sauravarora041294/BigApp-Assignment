@@ -6,24 +6,21 @@ $font-size-head: 20px;
 .table-body{
   width: 100%;
   color: $font-color-head;
-  margin-top: 45px;
+  margin-top: 25px;
   font-size: $font-size-head;
 }
 .head-text{
   font-size: 25px;
-  font-weight: 700;;
+  font-weight: 700;
+  margin-left: 20px;
 }
 table.table-view{
   table-layout: fixed;
   width: 100%;
   padding: 20px;
-  background-color:#f9f9f9;
-  border-style: solid;
-  border-color: gray;
-  border-width: 2px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  border-top-style: solid;
+  border-top-color: gray;
+  border-top-width: 2px;
 }
 .text_column{
   color: $font-color-table;

@@ -1,3 +1,14 @@
+<div>
+  <div class="graph-canvas" [hidden]="!canvasRef">
+    <canvas #canvasRef id="canvas-ref">{{canvasRef}}</canvas>
+  </div>
+  <div class="graph-canvas" [hidden]="!canvasRefBar">
+    <canvas #canvasRefBar id="canvas-ref-bar">{{canvasRefBar}}</canvas>
+  </div>
+  <div class="graph-canvas" [hidden]="!canvasRefSemi">
+    <canvas #canvasRefSemi id="canvas-ref-semi">{{canvasRefSemi}}</canvas>
+  </div>
+</div>
 <div class="table-container" *ngIf="table_data">
   <input class="search-input"
          [(ngModel)]="searchText"

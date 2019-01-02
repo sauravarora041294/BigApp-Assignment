@@ -18,7 +18,6 @@ export class TableComponent {
     this.config.forEach((val) => {
       this.sort_asc.set(val['mapped_data'], true);
     });
-    console.log(this.sort_asc);
   }
 
   public order(column): void {
